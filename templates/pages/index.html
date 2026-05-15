@@ -73,6 +73,30 @@
 
 <section>
   <div class="container">
+    <div class="featured-video">
+      <div class="featured-video__frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/{{ featured_video.id }}?rel=0"
+          title="{{ featured_video.title }}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      <div>
+        <span class="section-eyebrow">DFW We Run On EOS<sup>®</sup></span>
+        <h2 class="section-title">A quick look at running on EOS<sup>®</sup>.</h2>
+        <p class="text-muted" style="font-size: var(--text-base); margin-bottom: var(--space-6);">
+          A short overview of what it looks like when a DFW leadership team commits to EOS<sup>®</sup>. More videos on the About page and on my <a href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube channel</a>.
+        </p>
+        <a class="btn btn--ghost" href="about.html">More from Ray</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <span class="section-eyebrow">Who EOS<sup>®</sup> is for</span>
     <h2 class="section-title">Owner-led companies between 10 and 250 employees.</h2>
     <p class="section-lede">

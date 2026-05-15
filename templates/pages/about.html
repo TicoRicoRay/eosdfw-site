@@ -13,6 +13,22 @@
 
 <section>
   <div class="container container--narrow">
+    <div class="headshot-card" style="margin-bottom: var(--space-12);">
+      <div class="headshot" aria-label="Headshot placeholder for Ray Myers"></div>
+      <div class="headshot-card__meta">
+        <strong>Ray Myers</strong>
+        <div class="role">Professional EOS Implementer<sup>®</sup> · Plano, Texas</div>
+        <p class="text-muted" style="font-size: var(--text-sm); margin-bottom: var(--space-4);">
+          Entrepreneur, speaker, business team coach, inventor, rock musician.
+        </p>
+        <div class="headshot-card__links">
+          <a class="btn btn--ghost" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn--ghost" href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a class="btn btn--ghost" href="mailto:{{ site.primary_email }}">Email</a>
+        </div>
+      </div>
+    </div>
+
     <div class="prose">
       <p>
         I've been an entrepreneur my whole life. I started my first business at the age of 14 — at the time, the youngest business owner in the state of Texas. Since then I've been part of nine different entrepreneurial companies. Some were great successes. Some were total train wrecks. Any entrepreneur will tell you that you learn much more from the train wrecks than the successes.
@@ -46,6 +62,33 @@
 </section>
 
 <section style="background: var(--color-surface-2);">
+  <div class="container">
+    <span class="section-eyebrow">Video</span>
+    <h2 class="section-title">From my channel.</h2>
+    <p class="section-lede">
+      Short videos on EOS<sup>®</sup>, leadership teams, and getting Traction<sup>®</sup> in your business.
+    </p>
+    <div class="video-grid">
+      {% for v in videos %}
+      <a class="video-card" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener noreferrer" aria-label="Watch: {{ v.title }}">
+        <div class="video-card__thumb">
+          <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <span class="video-card__play" aria-hidden="true"></span>
+        </div>
+        <div class="video-card__body">
+          <div class="video-card__title">{{ v.title }}</div>
+          {% if v.duration %}<div class="video-card__meta">{{ v.duration }}</div>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="text-muted" style="font-size: var(--text-sm); margin-top: var(--space-8);">
+      Subscribe on <a href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube</a> for new videos.
+    </p>
+  </div>
+</section>
+
+<section>
   <div class="container">
     <div class="cta-banner">
       <h2>Let's see if we're a fit.</h2>

@@ -1,0 +1,11 @@
+name = "eosdfw-contact-form"
+main = "contact-form-worker.js"
+compatibility_date = "2025-01-01"
+
+# After zone is set up, add a custom domain route:
+# routes = [
+#   { pattern = "form.eosdfw.com/*", custom_domain = true }
+# ]
+
+# To enable Turnstile (optional, recommended once form gets spam):
+#   wrangler secret put TURNSTILE_SECRET

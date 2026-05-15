@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Message received</span>
+    <h1 class="hero__title">Thanks — I'll be in touch.</h1>
+    <p class="hero__lede">
+      I read every message personally and respond within one business day. In the meantime, you can book a time directly on my calendar.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary btn--lg" href="{{ site.calendly }}" target="_blank" rel="noopener noreferrer">Book a 90 Minute Meeting</a>
+      <a class="btn btn--ghost btn--lg" href="index.html">Back to home</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -58,7 +58,11 @@
           Tell me a bit about your business and what you're looking for. I'll get back to you within one business day.
         </p>
 
-        <form class="form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+        <form class="form" action="{{ site.form_action }}" method="POST">
+          <!-- honeypot for bots; real users never see/fill it -->
+          <div style="position:absolute; left:-9999px; height:0; width:0; overflow:hidden;" aria-hidden="true">
+            <label>Website<input name="website" tabindex="-1" autocomplete="off"></label>
+          </div>
           <div class="form-row">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" required autocomplete="name">

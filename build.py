@@ -29,7 +29,26 @@ SITE = {
     "phone": None,  # not published per the EOS profile
     "linkedin": "https://www.linkedin.com/in/raymyers",
     "youtube": "https://www.youtube.com/@RayMyersBusinessCoach",
+    # Contact form action — replace with the deployed Cloudflare Worker URL.
+    # See worker/README.md for setup. Leaving as a workers.dev placeholder.
+    "form_action": "https://eosdfw-contact-form.workers.dev",
 }
+
+# YouTube content — pulled from @RayMyersBusinessCoach.
+# Featured video shows on the home page; the full grid renders on About.
+FEATURED_VIDEO = {
+    "id": "WtagBi514bA",
+    "title": "DFW We Run On EOS® 2025",
+    "duration": "1:01",
+}
+VIDEOS = [
+    {"id": "6LC4HxK2e0w", "title": "Discover EOS — For Free", "duration": "2:47"},
+    {"id": "PvTo-eOMnww", "title": "Living Your Ideal Entrepreneurial Life", "duration": "3:09"},
+    {"id": "Mfujrpxw1mo", "title": "Do You Know Someone Who Owns a Business?", "duration": "1:29"},
+    {"id": "WtagBi514bA", "title": "DFW We Run On EOS® 2025", "duration": "1:01"},
+    {"id": "uh4xqXgQSkg", "title": "Avoid Costly Hiring Mistakes", "duration": ""},
+    {"id": "3xX5igLrkCo", "title": "Matching a Visionary with the Right Integrator", "duration": ""},
+]
 
 # Each entry: src template (relative to pages/), output path (relative to OUT),
 # and page-specific metadata. `nav_key` ties to the active state in nav.
@@ -93,6 +112,12 @@ PAGES_MANIFEST = [
      "title": "Contact Ray Myers | DFW EOS Implementer®",
      "description": "Get in touch with Ray Myers, Professional EOS Implementer® in the Dallas–Fort Worth metroplex. Email, phone, or book your free 90 Minute Meeting.",
      "nav_key": "contact"},
+
+    {"src": "thanks.html",
+     "out": "thanks.html",
+     "title": "Thanks | DFW EOS Implementer® Ray Myers",
+     "description": "Thanks for reaching out. Ray will respond within one business day.",
+     "nav_key": "contact"},
 ]
 
 
@@ -113,6 +138,8 @@ def build():
             site=SITE,
             page=page,
             asset_prefix=asset_prefix,
+            featured_video=FEATURED_VIDEO,
+            videos=VIDEOS,
         )
         out_path = OUT / page["out"]
         out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -130,6 +157,9 @@ def build_sitemap():
     today = datetime.utcnow().strftime("%Y-%m-%d")
     urls = []
     for page in PAGES_MANIFEST:
+        # Exclude utility pages from sitemap
+        if page["out"] in ("thanks.html",):
+            continue
         loc = SITE["site_url"].rstrip("/") + "/" + page["out"]
         # Pretty URL for index pages
         loc = loc.replace("/index.html", "/")
