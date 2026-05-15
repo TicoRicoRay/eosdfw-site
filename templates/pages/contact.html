@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Contact</span>
+    <h1 class="hero__title">Let's talk.</h1>
+    <p class="hero__lede">
+      Whether you're ready to schedule a 90 Minute Meeting or just have a question about EOS<sup>®</sup>, the fastest way to reach me is by email or directly on my calendar.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <h2 class="section-title">How to reach me</h2>
+        <ul class="feature-list">
+          <li>
+            <span class="check">✉</span>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:{{ site.primary_email }}">{{ site.primary_email }}</a><br>
+              <span class="text-muted">Best for detailed questions or scheduling notes.</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">▶</span>
+            <div>
+              <strong>Book a call</strong><br>
+              <a href="{{ site.calendly }}" rel="noopener">Pick a time on my calendar</a><br>
+              <span class="text-muted">Direct link to my 90 Minute Meeting booking.</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">in</span>
+            <div>
+              <strong>LinkedIn</strong><br>
+              <a href="{{ site.linkedin }}" rel="noopener">Connect with me on LinkedIn</a><br>
+              <span class="text-muted">Regular posts on running on EOS<sup>®</sup>.</span>
+            </div>
+          </li>
+          <li>
+            <span class="check">📍</span>
+            <div>
+              <strong>Service area</strong><br>
+              Dallas–Fort Worth metroplex (in person)<br>
+              <span class="text-muted">Virtual engagements available worldwide.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="section-title">Send a quick note</h2>
+        <p class="text-muted" style="margin-bottom: var(--space-6);">
+          Tell me a bit about your business and what you're looking for. I'll get back to you within one business day.
+        </p>
+
+        <form class="form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="team-size">Leadership team size</label>
+            <select id="team-size" name="team_size">
+              <option value="">Select…</option>
+              <option>2–4 people</option>
+              <option>5–7 people</option>
+              <option>8+ people</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">What's on your mind?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">Send message</button>
+        </form>
+        <p class="text-muted" style="font-size: var(--text-xs); margin-top: var(--space-4);">
+          Your information is used only to respond to your inquiry. No marketing list, no resale, no follow-up unless you ask for it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Free, no obligation</span>
+    <h1 class="hero__title">The 90 Minute Meeting.</h1>
+    <p class="hero__lede">
+      Ninety minutes with your leadership team. I share an overview of EOS<sup>®</sup>, your team asks questions, and by the end you'll know whether EOS<sup>®</sup> is right for your business — and whether we're a fit to work together.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary btn--lg" href="{{ site.calendly }}" rel="noopener">Schedule on my calendar</a>
+      <a class="btn btn--ghost btn--lg" href="mailto:{{ site.primary_email }}?subject=90%20Minute%20Meeting%20-%20DFW">Email me directly</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container container--narrow">
+    <div class="prose">
+      <h2>What we'll cover</h2>
+      <ul>
+        <li><strong>An overview of EOS<sup>®</sup>.</strong> The three things every leadership team wants: Vision, Traction<sup>®</sup>, and Healthy.</li>
+        <li><strong>The Six Key Components<sup>®</sup>.</strong> A simple model your team can use to assess the strength of your business today.</li>
+        <li><strong>How implementation actually works.</strong> The 10 days, two years, and what you'd commit to as a team.</li>
+        <li><strong>Your questions.</strong> Whatever your leadership team is wondering — we'll talk about it.</li>
+        <li><strong>A clear next step.</strong> Either we move forward together, or you leave with tools you can use either way.</li>
+      </ul>
+
+      <h2>Who should be in the room</h2>
+      <p>
+        Your entire leadership team. Not just the owner. EOS<sup>®</sup> is a team sport, and the 90 Minute Meeting is the first time your team will experience the way we work together. Five to seven people is typical. Two-hour blocks scheduled in advance work best.
+      </p>
+
+      <h2>The fine print — there isn't any</h2>
+      <p>
+        The 90 Minute Meeting is genuinely free. There is no fee, no follow-up obligation, and no pressure. If we decide we're not a fit, you'll leave with a clearer picture of EOS<sup>®</sup> and a few practical tools your team can start using on Monday.
+      </p>
+      <p>
+        If we are a fit, the next step is Focus Day<sup>®</sup> — usually scheduled within 30 days.
+      </p>
+
+      <h2>Two ways to schedule</h2>
+      <p>
+        The fastest way is to <a href="{{ site.calendly }}" rel="noopener">book directly on my calendar</a>. Pick a time, fill in your team's details, and I'll confirm by email.
+      </p>
+      <p>
+        Prefer email first? Reach out at <a href="mailto:{{ site.primary_email }}">{{ site.primary_email }}</a> and we'll find a time that works for your whole team.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--color-surface-2);">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to schedule?</h2>
+      <p>Pick a time on my calendar. I'll confirm by email and send a short prep note for your leadership team.</p>
+      <a class="btn btn--primary btn--lg" href="{{ site.calendly }}" rel="noopener">Book your free session</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="site-footer__grid">
+        <div>
+          <a href="{{ asset_prefix }}" class="brand" style="margin-bottom: var(--space-3);">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="36" height="36" rx="8" fill="currentColor" opacity="0.08"/>
+              <path d="M20 8 L30 22 H10 Z" fill="currentColor" opacity="0.9"/>
+              <rect x="10" y="24" width="20" height="6" fill="currentColor" opacity="0.6"/>
+              <circle cx="20" cy="33" r="2.5" fill="currentColor"/>
+            </svg>
+            <span>EOSDFW</span>
+          </a>
+          <p style="margin-top: var(--space-4); max-width: 36ch;">
+            Ray Myers, Professional EOS Implementer<sup>®</sup> serving the Dallas–Fort Worth metroplex and clients virtually nationwide.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="{{ asset_prefix }}about.html">About Ray</a></li>
+            <li><a href="{{ asset_prefix }}services/">Services</a></li>
+            <li><a href="{{ asset_prefix }}90-minute-meeting.html">90 Minute Meeting</a></li>
+            <li><a href="{{ asset_prefix }}insights/">Insights</a></li>
+            <li><a href="{{ asset_prefix }}contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="{{ asset_prefix }}services/eos-process.html">The EOS Process<sup>®</sup></a></li>
+            <li><a href="{{ asset_prefix }}services/focus-day.html">Focus Day<sup>®</sup></a></li>
+            <li><a href="{{ asset_prefix }}services/vision-building.html">Vision Building<sup>®</sup></a></li>
+            <li><a href="{{ asset_prefix }}services/quarterly-annual.html">Quarterly &amp; Annual</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:{{ site.primary_email }}">{{ site.primary_email }}</a></li>
+            <li><a href="{{ site.calendly }}" rel="noopener">Book a call</a></li>
+            <li><a href="{{ site.linkedin }}" rel="noopener">LinkedIn</a></li>
+            <li><a href="{{ site.youtube }}" rel="noopener">YouTube</a></li>
+            <li><a href="https://www.eosworldwide.com/" rel="noopener">EOS Worldwide</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__legal">
+        <p>
+          EOS<sup>®</sup>, EOS Implementer<sup>®</sup>, Professional EOS Implementer<sup>®</sup>, Traction<sup>®</sup>, The EOS Life<sup>®</sup>, Six Key Components<sup>®</sup>, EOS Model<sup>®</sup>, EOS Process<sup>®</sup>, Focus Day<sup>®</sup>, Vision Building<sup>®</sup>, Level 10 Meeting<sup>®</sup>, V/TO<sup>®</sup>, The Accountability Chart<sup>®</sup>, Rocket Fuel<sup>®</sup>, We Run on EOS<sup>®</sup>, and related marks are trademarks of EOS Worldwide, LLC. Used with permission. EOS Toolbox<sup>™</sup> and EOS Foundational Tools<sup>™</sup> are common-law trademarks of EOS Worldwide, LLC. Learn more about EOS<sup>®</sup> at <a href="https://www.eosworldwide.com/">eosworldwide.com</a>.
+        </p>
+        <p>© <span id="year">2026</span> Ray Myers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

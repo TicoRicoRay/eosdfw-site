@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Insights</span>
+    <h1 class="hero__title">Practical guidance from the EOS<sup>®</sup> trenches.</h1>
+    <p class="hero__lede">
+      Short, useful posts on running a better business. Lessons from leadership teams across Dallas–Fort Worth. Tools, tips, and the occasional honest reflection on what it takes to get more of what you want.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container container--narrow">
+    <div class="prose">
+      <h2>Coming soon</h2>
+      <p>
+        I'm building this section out over the coming months. New posts will cover the topics that come up most often in my work with leadership teams: getting Rocks right, running a better Level 10 Meeting<sup>®</sup>, when to put someone on a People Analyzer<sup>®</sup>, what to do when the V/TO<sup>®</sup> stops feeling like yours, and more.
+      </p>
+      <p>
+        Want to be notified when posts go live? Email me at <a href="mailto:{{ site.primary_email }}">{{ site.primary_email }}</a> and I'll add you to the list.
+      </p>
+
+      <h2>In the meantime</h2>
+      <ul>
+        <li>Watch the <a href="https://www.youtube.com/@RayMyersBusinessCoach" rel="noopener">YouTube channel</a> for short videos on running on EOS<sup>®</sup>.</li>
+        <li>Connect on <a href="{{ site.linkedin }}" rel="noopener">LinkedIn</a> for regular posts and reflections.</li>
+        <li>Explore the <a href="https://blog.eosworldwide.com/" rel="noopener">EOS Worldwide blog</a> for foundational content from Gino Wickman, Don Tinney, and the broader EOS<sup>®</sup> community.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
