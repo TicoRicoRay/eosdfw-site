@@ -884,3 +884,44 @@ section {
   .headshot { max-width: 200px; }
   .headshot-card__links { justify-content: center; }
 }
+
+/* ===== Split hero (Home) with portrait ===== */
+.hero--split .hero__split {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: clamp(var(--space-8), 6vw, var(--space-12));
+  align-items: center;
+}
+.hero--split .hero__text { text-align: left; }
+.hero--split .hero__title,
+.hero--split .hero__lede,
+.hero--split .hero__cta { margin-left: 0; margin-right: 0; }
+.hero--split .hero__cta { justify-content: flex-start; }
+
+.hero__portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__portrait img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 18%;
+  background: linear-gradient(180deg, var(--color-surface-2) 0%, rgba(0,0,0,0) 100%);
+  box-shadow: 0 24px 48px -16px rgba(15,30,60,0.25), 0 0 0 1px var(--color-divider);
+}
+
+@media (max-width: 820px) {
+  .hero--split .hero__split {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .hero--split .hero__text { text-align: center; }
+  .hero--split .hero__cta { justify-content: center; }
+  .hero__portrait { order: -1; }
+  .hero__portrait img { max-width: 260px; }
+}

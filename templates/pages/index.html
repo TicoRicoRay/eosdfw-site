@@ -1,16 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="hero hero--home">
-  <div class="container">
-    <span class="hero__eyebrow">DFW EOS Implementer<sup>®</sup></span>
-    <h1 class="hero__title">Get what you want from your business.</h1>
-    <p class="hero__lede">
-      I'm Ray Myers — a Professional EOS Implementer<sup>®</sup> in the Dallas–Fort Worth metroplex. I help entrepreneurs and their leadership teams strengthen the Six Key Components<sup>®</sup> of their business using EOS<sup>®</sup> — the Entrepreneurial Operating System<sup>®</sup>.
-    </p>
-    <div class="hero__cta">
-      <a class="btn btn--primary btn--lg" href="90-minute-meeting.html">Book your free 90 Minute Meeting</a>
-      <a class="btn btn--ghost btn--lg" href="about.html">About Ray</a>
+<section class="hero hero--home hero--split">
+  <div class="container hero__split">
+    <div class="hero__text">
+      <span class="hero__eyebrow">DFW EOS Implementer<sup>®</sup></span>
+      <h1 class="hero__title">Get what you want from your business.</h1>
+      <p class="hero__lede">
+        I'm Ray Myers — a Professional EOS Implementer<sup>®</sup> in the Dallas–Fort Worth metroplex. I help entrepreneurs and their leadership teams strengthen the Six Key Components<sup>®</sup> of their business using EOS<sup>®</sup> — the Entrepreneurial Operating System<sup>®</sup>.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="90-minute-meeting.html">Book your free 90 Minute Meeting</a>
+        <a class="btn btn--ghost btn--lg" href="about.html">About Ray</a>
+      </div>
+    </div>
+    <div class="hero__portrait" aria-hidden="true">
+      <img src="{{ asset_prefix }}images/ray-myers-fulllength.jpg"
+           alt="Ray Myers, Professional EOS Implementer in DFW"
+           width="500" height="500" loading="eager" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -84,10 +91,10 @@
           allowfullscreen></iframe>
       </div>
       <div>
-        <span class="section-eyebrow">DFW We Run On EOS<sup>®</sup></span>
+        <span class="section-eyebrow">Discover EOS<sup>®</sup></span>
         <h2 class="section-title">A quick look at running on EOS<sup>®</sup>.</h2>
         <p class="text-muted" style="font-size: var(--text-base); margin-bottom: var(--space-6);">
-          A short overview of what it looks like when a DFW leadership team commits to EOS<sup>®</sup>. More videos on the About page and on my <a href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube channel</a>.
+          A short overview of what it looks like to discover the Entrepreneurial Operating System<sup>®</sup> for free. More videos on the About page and on my <a href="{{ site.youtube }}" target="_blank" rel="noopener noreferrer">YouTube channel</a>.
         </p>
         <a class="btn btn--ghost" href="about.html">More from Ray</a>
       </div>

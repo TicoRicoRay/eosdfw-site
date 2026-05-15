@@ -37,15 +37,14 @@ SITE = {
 # YouTube content — pulled from @RayMyersBusinessCoach.
 # Featured video shows on the home page; the full grid renders on About.
 FEATURED_VIDEO = {
-    "id": "WtagBi514bA",
-    "title": "DFW We Run On EOS® 2025",
-    "duration": "1:01",
+    "id": "6LC4HxK2e0w",
+    "title": "Discover EOS® — For Free",
+    "duration": "2:47",
 }
 VIDEOS = [
-    {"id": "6LC4HxK2e0w", "title": "Discover EOS — For Free", "duration": "2:47"},
+    {"id": "6LC4HxK2e0w", "title": "Discover EOS® — For Free", "duration": "2:47"},
     {"id": "PvTo-eOMnww", "title": "Living Your Ideal Entrepreneurial Life", "duration": "3:09"},
     {"id": "Mfujrpxw1mo", "title": "Do You Know Someone Who Owns a Business?", "duration": "1:29"},
-    {"id": "WtagBi514bA", "title": "DFW We Run On EOS® 2025", "duration": "1:01"},
     {"id": "uh4xqXgQSkg", "title": "Avoid Costly Hiring Mistakes", "duration": ""},
     {"id": "3xX5igLrkCo", "title": "Matching a Visionary with the Right Integrator", "duration": ""},
 ]
