@@ -32,7 +32,7 @@ SITE = {
     "youtube": "https://www.youtube.com/@RayMyersBusinessCoach",
     # Contact form action — replace with the deployed Cloudflare Worker URL.
     # See worker/README.md for setup. Leaving as a workers.dev placeholder.
-    "form_action": "https://eosdfw-contact-form.workers.dev",
+    "form_action": "https://eosdfw-contact-form.rmyers-a0c.workers.dev",
 }
 
 # YouTube content — pulled from @RayMyersBusinessCoach.
