@@ -604,6 +604,61 @@ section {
 .prose li {
   margin-bottom: var(--space-2);
 }
+.prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+/* Article figures (inline photos in posts) */
+.post-figure {
+  margin: var(--space-8) 0;
+}
+.post-figure img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  display: block;
+}
+.post-figure--portrait img {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  width: auto;
+}
+.post-figure figcaption {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  font-style: italic;
+}
+.post-figure--lead {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-10);
+}
+.post-meta {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+.post-cta {
+  margin-top: var(--space-12);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+.post-cta h2 {
+  margin-top: 0;
+}
 
 /* ===== Forms ===== */
 .form {
