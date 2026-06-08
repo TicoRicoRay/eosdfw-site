@@ -2,6 +2,7 @@
 """
 EOSDFW.com static site builder.
 
+
 Renders Jinja2 templates from `templates/` into the project root as plain HTML.
 GitHub Pages serves the HTML files directly. Run `python3 build.py` to rebuild.
 """
