@@ -30,9 +30,6 @@ SITE = {
     "phone": None,  # not published per the EOS profile
     "linkedin": "https://www.linkedin.com/in/raymyers",
     "youtube": "https://www.youtube.com/@RayMyersBusinessCoach",
-    # Contact form action — replace with the deployed Cloudflare Worker URL.
-    # See worker/README.md for setup. Leaving as a workers.dev placeholder.
-    "form_action": "https://eosdfw-contact-form.rmyers-a0c.workers.dev",
 }
 
 # YouTube content — pulled from @RayMyersBusinessCoach.
@@ -110,13 +107,7 @@ PAGES_MANIFEST = [
     {"src": "contact.html",
      "out": "contact.html",
      "title": "Contact Ray Myers | DFW EOS Implementer®",
-     "description": "Get in touch with Ray Myers, Professional EOS Implementer® in the Dallas–Fort Worth metroplex. Email, phone, or book your free 90 Minute Meeting.",
-     "nav_key": "contact"},
-
-    {"src": "thanks.html",
-     "out": "thanks.html",
-     "title": "Thanks | DFW EOS Implementer® Ray Myers",
-     "description": "Thanks for reaching out. Ray will respond within one business day.",
+     "description": "Get in touch with Ray Myers, Professional EOS Implementer® in the Dallas–Fort Worth metroplex. Email or book your free 90 Minute Meeting.",
      "nav_key": "contact"},
 ]
 
@@ -157,9 +148,6 @@ def build_sitemap():
     today = datetime.utcnow().strftime("%Y-%m-%d")
     urls = []
     for page in PAGES_MANIFEST:
-        # Exclude utility pages from sitemap
-        if page["out"] in ("thanks.html",):
-            continue
         loc = SITE["site_url"].rstrip("/") + "/" + page["out"]
         # Pretty URL for index pages
         loc = loc.replace("/index.html", "/")
