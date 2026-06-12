@@ -40,20 +40,25 @@
     {# ============================================================
        OLDER ARTICLES (grid)
        Drop additional .article-card blocks inside this grid.
-       Example:
-       <a href="..." class="article-card">
-         <img class="article-card__image" src="..." alt="...">
-         <div class="article-card__body">
-           <div class="article-card__eyebrow">Category</div>
-           <h3 class="article-card__title">Title</h3>
-           <p class="article-card__excerpt">One-sentence teaser.</p>
-           <span class="article-card__readmore">Read the post &rarr;</span>
-         </div>
-       </a>
        ============================================================ #}
-    {# <div class="article-grid">
-         (additional cards here)
-       </div> #}
+    <div class="article-grid">
+
+      <a href="{{ asset_prefix }}insights/flying-blind-scorecard.html" class="article-card">
+        <img class="article-card__image"
+             src="{{ asset_prefix }}images/insights/flying-blind-thumbnail.jpg"
+             alt="Ray Myers at a whiteboard showing an EOS Scorecard layout"
+             loading="lazy">
+        <div class="article-card__body">
+          <div class="article-card__eyebrow">The Scorecard</div>
+          <h3 class="article-card__title">Flying blind with your business?</h3>
+          <p class="article-card__excerpt">
+            Most operators are drowning in data and starving for information. Five to fifteen numbers a week can replace the entire dashboard of guesses.
+          </p>
+          <span class="article-card__readmore">Read the post &rarr;</span>
+        </div>
+      </a>
+
+    </div>
 
     <div class="prose" style="margin-top: var(--space-12);">
 

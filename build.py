@@ -104,6 +104,12 @@ PAGES_MANIFEST = [
      "description": "Insightful guidance, practical tips, and real-world stories to help DFW entrepreneurs and leadership teams strengthen their business with EOS®.",
      "nav_key": "insights"},
 
+    {"src": "insights/flying-blind-scorecard.html",
+     "out": "insights/flying-blind-scorecard.html",
+     "title": "Flying Blind With Your Business? — The EOS Scorecard | Ray Myers, DFW EOS Implementer®",
+     "description": "Most operators are drowning in data and starving for information. Here's how 5–15 numbers a week — the EOS® Scorecard — replaces the entire dashboard of guesses. By Ray Myers, Professional EOS Implementer® in DFW.",
+     "nav_key": "insights"},
+
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
      "title": "Time for Other Passions — The EOS Life® | Ray Myers, DFW EOS Implementer®",

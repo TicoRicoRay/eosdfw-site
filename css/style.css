@@ -697,7 +697,7 @@ section {
   margin-bottom: var(--space-2);
 }
 .article-card__title {
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   margin: 0 0 var(--space-3) 0;
   line-height: 1.25;
   color: var(--color-text);
