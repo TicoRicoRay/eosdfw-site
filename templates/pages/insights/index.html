@@ -13,20 +13,49 @@
 
 <section>
   <div class="container container--narrow">
-    <div class="prose">
 
-      <h2>Latest</h2>
+    <h2 style="margin-bottom: var(--space-6);">Latest</h2>
 
-      <article style="margin-bottom: var(--space-10);">
-        <h3 style="margin-bottom: var(--space-2);">
-          <a href="{{ asset_prefix }}insights/eos-life-time-for-passions.html">Time for other passions.</a>
-        </h3>
-        <p class="post-meta" style="margin-bottom: var(--space-3);">The EOS Life<sup>&reg;</sup> &middot; By Ray Myers</p>
-        <p>
-          The point of a great business isn&rsquo;t a bigger business &mdash; it&rsquo;s a bigger life. For me, that's tornado chasing, stage gigs, stunt work, astronaut training, and how the right system makes it all possible.
-          <a href="{{ asset_prefix }}insights/eos-life-time-for-passions.html">Read the post &rarr;</a>
+    {# ============================================================
+       FEATURED ARTICLE (hero card)
+       The newest post lives here. When a new post ships, move the
+       current featured article into the .article-grid below and put
+       the new post in this hero card.
+       ============================================================ #}
+    <a href="{{ asset_prefix }}insights/eos-life-time-for-passions.html" class="article-card article-card--hero">
+      <img class="article-card__image"
+           src="{{ asset_prefix }}images/passions/ray-tornado.jpg"
+           alt="Ray Myers in the Texas Panhandle with a tornado dropping behind him"
+           loading="lazy">
+      <div class="article-card__body">
+        <div class="article-card__eyebrow">The EOS Life<sup>&reg;</sup></div>
+        <h3 class="article-card__title">Time for other passions.</h3>
+        <p class="article-card__excerpt">
+          The point of a great business isn&rsquo;t a bigger business &mdash; it&rsquo;s a bigger life. For me, that&rsquo;s tornado chasing, stage gigs, stunt work, astronaut training, and how the right system makes it all possible.
         </p>
-      </article>
+        <span class="article-card__readmore">Read the post &rarr;</span>
+      </div>
+    </a>
+
+    {# ============================================================
+       OLDER ARTICLES (grid)
+       Drop additional .article-card blocks inside this grid.
+       Example:
+       <a href="..." class="article-card">
+         <img class="article-card__image" src="..." alt="...">
+         <div class="article-card__body">
+           <div class="article-card__eyebrow">Category</div>
+           <h3 class="article-card__title">Title</h3>
+           <p class="article-card__excerpt">One-sentence teaser.</p>
+           <span class="article-card__readmore">Read the post &rarr;</span>
+         </div>
+       </a>
+       ============================================================ #}
+    {# <div class="article-grid">
+         (additional cards here)
+       </div> #}
+
+    <div class="prose" style="margin-top: var(--space-12);">
 
       <h2>More coming soon</h2>
       <p>
@@ -43,6 +72,7 @@
         <li>Explore the <a href="https://blog.eosworldwide.com/" rel="noopener">EOS Worldwide blog</a> for foundational content from Gino Wickman, Don Tinney, and the broader EOS<sup>&reg;</sup> community.</li>
       </ul>
     </div>
+
   </div>
 </section>
 

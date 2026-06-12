@@ -660,6 +660,102 @@ section {
   margin-top: 0;
 }
 
+/* ===== Insights index — article cards ===== */
+.article-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+  border-color: var(--color-primary);
+  text-decoration: none;
+}
+.article-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  background: var(--color-surface-alt, #f0f0f0);
+}
+.article-card__body {
+  padding: var(--space-6);
+}
+.article-card__eyebrow {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+.article-card__title {
+  font-size: var(--text-2xl);
+  margin: 0 0 var(--space-3) 0;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+.article-card__excerpt {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-3) 0;
+}
+.article-card__readmore {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Hero card: horizontal layout on desktop, stacked on mobile */
+.article-card--hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .article-card--hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  .article-card--hero .article-card__image {
+    height: 100%;
+    aspect-ratio: auto;
+    min-height: 340px;
+    object-position: 35% 35%;
+  }
+  .article-card--hero .article-card__body {
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article-card--hero .article-card__title {
+    font-size: var(--text-2xl);
+  }
+}
+@media (min-width: 1024px) {
+  .article-card--hero .article-card__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* Grid for additional articles */
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+@media (min-width: 640px) {
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ===== Forms ===== */
 .form {
   display: flex;
