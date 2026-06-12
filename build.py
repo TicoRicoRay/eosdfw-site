@@ -110,6 +110,12 @@ PAGES_MANIFEST = [
      "description": "Most operators are drowning in data and starving for information. Here's how 5–15 numbers a week — the EOS® Scorecard — replaces the entire dashboard of guesses. By Ray Myers, Professional EOS Implementer® in DFW.",
      "nav_key": "insights"},
 
+    {"src": "insights/rocket-fuel-visionary-integrator.html",
+     "out": "insights/rocket-fuel-visionary-integrator.html",
+     "title": "Matching a Visionary With the Right Integrator — Rocket Fuel® | Ray Myers, DFW EOS Implementer®",
+     "description": "Steve Jobs had Woz. Walt had Roy. When the Visionary and Integrator click, it's Rocket Fuel®. Here's how to tell which seat you're in and what makes the pairing work. By Ray Myers, Professional EOS Implementer® in DFW.",
+     "nav_key": "insights"},
+
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
      "title": "Time for Other Passions — The EOS Life® | Ray Myers, DFW EOS Implementer®",
