@@ -127,6 +127,12 @@ PAGES_MANIFEST = [
      "title": "Contact Ray Myers | DFW EOS Implementer®",
      "description": "Get in touch with Ray Myers, Professional EOS Implementer® in the Dallas–Fort Worth metroplex. Email or book your free 90 Minute Meeting.",
      "nav_key": "contact"},
+
+    {"src": "privacy.html",
+     "out": "privacy.html",
+     "title": "Privacy Policy | Ray Myers, DFW EOS Implementer®",
+     "description": "Privacy policy for eosdfw.com. No trackers, no data sale, no marketing cookies. Details on what is collected, how it's used, and your California (CCPA/CPRA) and other privacy rights.",
+     "nav_key": "privacy"},
 ]
 
 
