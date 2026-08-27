@@ -100,8 +100,8 @@ PAGES_MANIFEST = [
 
     {"src": "insights/index.html",
      "out": "insights/index.html",
-     "title": "Insights | Ray Myers, DFW EOS Implementer®",
-     "description": "Insightful guidance, practical tips, and real-world stories to help DFW entrepreneurs and leadership teams strengthen their business with EOS®.",
+     "title": "EOS® Insights for Dallas–Fort Worth Business Owners | Ray Myers, DFW EOS Implementer®",
+     "description": "Practical guidance on the Entrepreneurial Operating System® — Vision, Traction®, Scorecards, Level 10 Meetings®, and the EOS Life® — for DFW business owners and leadership teams. From Professional EOS Implementer® Ray Myers.",
      "nav_key": "insights"},
 
     {"src": "insights/flying-blind-scorecard.html",
