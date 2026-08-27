@@ -116,6 +116,12 @@ PAGES_MANIFEST = [
      "description": "Steve Jobs had Woz. Walt had Roy. When the Visionary and Integrator click, it's Rocket Fuel®. Here's how to tell which seat you're in and what makes the pairing work. By Ray Myers, Professional EOS Implementer® in DFW.",
      "nav_key": "insights"},
 
+    {"src": "insights/level-10-meeting-90-minute-fix.html",
+     "out": "insights/level-10-meeting-90-minute-fix.html",
+     "title": "The Level 10 Meeting®: The 90-Minute Weekly Leadership Meeting That Actually Works | DFW EOS Implementer®",
+     "description": "Weekly leadership meetings feel like a waste because they default to status updates. Here's the seven-part Level 10 Meeting® agenda — 90 minutes, same time, every week — that turns meetings into decisions. By Ray Myers, Professional EOS Implementer® in DFW.",
+     "nav_key": "insights"},
+
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
      "title": "Time for Other Passions — The EOS Life® | Ray Myers, DFW EOS Implementer®",
