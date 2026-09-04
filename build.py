@@ -132,7 +132,8 @@ PAGES_MANIFEST = [
      "out": "insights/rocks-vs-todos-quarterly-priorities.html",
      "title": "Rocks vs. To-Dos: Why Your Team Keeps Missing Quarterly Priorities | Ray Myers, DFW EOS Implementer®",
      "description": "Most missed Rocks aren't a discipline problem, they're a definition problem. The difference between a Rock and a to-do, why 3 to 7 is the magic number, and how to set Q4 priorities your leadership team will actually hit. By Ray Myers, Professional EOS Implementer® in DFW.",
-     "nav_key": "insights"},
+     "nav_key": "insights",
+     "noindex": True},  # remove noindex flag + template meta tag on publish day
 
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
@@ -190,6 +191,8 @@ def build_sitemap():
     today = datetime.utcnow().strftime("%Y-%m-%d")
     urls = []
     for page in PAGES_MANIFEST:
+        if page.get("noindex"):
+            continue
         loc = SITE["site_url"].rstrip("/") + "/" + page["out"]
         # Pretty URL for index pages
         loc = loc.replace("/index.html", "/")

@@ -78,6 +78,20 @@
     }
   }
   </script>
+
+  <!-- Google Analytics 4 (privacy-friendly config: IP anonymization on, Google Signals off, ad personalization off) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TDK27VK45"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TDK27VK45', {
+      'anonymize_ip': true,
+      'allow_google_signals': false,
+      'allow_ad_personalization_signals': false
+    });
+  </script>
+
   
 </head>
 <body>

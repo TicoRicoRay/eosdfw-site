@@ -1,4 +1,8 @@
 {% extends "base.html" %}
+{# TODO: remove noindex block on publish day, next week #}
+{% block extra_head %}
+  <meta name="robots" content="noindex, nofollow">
+{% endblock %}
 {% block content %}
 
 <section class="hero">
