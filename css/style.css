@@ -725,7 +725,8 @@ section {
     height: 100%;
     aspect-ratio: auto;
     min-height: 340px;
-    object-position: 35% 35%;
+    /* Subject-centered crop. Individual images can override with inline style. */
+    object-position: 50% 35%;
   }
   .article-card--hero .article-card__body {
     padding: var(--space-8);
