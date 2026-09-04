@@ -122,6 +122,12 @@ PAGES_MANIFEST = [
      "description": "Weekly leadership meetings feel like a waste because they default to status updates. Here's the seven-part Level 10 Meeting® agenda — 90 minutes, same time, every week — that turns meetings into decisions. By Ray Myers, Professional EOS Implementer® in DFW.",
      "nav_key": "insights"},
 
+    {"src": "insights/people-analyzer-right-people-right-seats.html",
+     "out": "insights/people-analyzer-right-people-right-seats.html",
+     "title": "The People Analyzer®: Right People, Right Seats | Ray Myers, DFW EOS Implementer®",
+     "description": "How to know if you have the right people in the right seats. A step-by-step guide to the EOS® People Analyzer, GWC (Get it, Want it, Capacity), core values ratings, and the Three-Strike Rule. By Ray Myers, Professional EOS Implementer® in DFW.",
+     "nav_key": "insights"},
+
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
      "title": "Time for Other Passions — The EOS Life® | Ray Myers, DFW EOS Implementer®",
