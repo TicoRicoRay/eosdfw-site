@@ -720,11 +720,15 @@ section {
   .article-card--hero {
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
+    /* Cap overall card height so the image slot never becomes a tall skinny strip. */
+    max-height: 480px;
   }
   .article-card--hero .article-card__image {
     height: 100%;
+    width: 100%;
     aspect-ratio: auto;
     min-height: 340px;
+    max-height: 480px;
     /* Subject-centered crop. Individual images can override with inline style. */
     object-position: 50% 35%;
   }
@@ -733,14 +737,23 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
   }
   .article-card--hero .article-card__title {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
+    line-height: 1.2;
+  }
+  .article-card--hero .article-card__excerpt {
+    /* Clamp excerpt to keep card height in check */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 @media (min-width: 1024px) {
   .article-card--hero .article-card__title {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
   }
 }
 
