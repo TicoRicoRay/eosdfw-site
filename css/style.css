@@ -740,8 +740,9 @@ section {
     overflow: hidden;
   }
   .article-card--hero .article-card__title {
-    font-size: var(--text-xl);
-    line-height: 1.2;
+    /* Fixed sizes: the clamp tokens are display-scale and blow up in half-columns */
+    font-size: 1.25rem;
+    line-height: 1.3;
   }
   .article-card--hero .article-card__excerpt {
     /* Clamp excerpt to keep card height in check */
@@ -753,7 +754,12 @@ section {
 }
 @media (min-width: 1024px) {
   .article-card--hero .article-card__title {
-    font-size: var(--text-2xl);
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .article-card--hero .article-card__title {
+    font-size: 1.75rem;
   }
 }
 
