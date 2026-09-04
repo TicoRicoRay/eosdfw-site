@@ -128,6 +128,12 @@ PAGES_MANIFEST = [
      "description": "How to know if you have the right people in the right seats. A step-by-step guide to the EOS® People Analyzer, GWC (Get it, Want it, Capacity), core values ratings, and the Three-Strike Rule. By Ray Myers, Professional EOS Implementer® in DFW.",
      "nav_key": "insights"},
 
+    {"src": "insights/ai-needs-a-foundation.html",
+     "out": "insights/ai-needs-a-foundation.html",
+     "title": "AI needs a foundation: Vision, Core Values, Right People | Ray Myers, DFW EOS Implementer®",
+     "description": "AI is a powerful toolset, but a powerful tool amplifies whatever you point it at. A 30-year software founder and Professional EOS Implementer® on why Vision, Core Values, and Right People in the Right Seats are the foundation businesses need before making the AI leap.",
+     "nav_key": "insights"},
+
     {"src": "insights/rocks-vs-todos-quarterly-priorities.html",
      "out": "insights/rocks-vs-todos-quarterly-priorities.html",
      "title": "Rocks vs. To-Dos: Why Your Team Keeps Missing Quarterly Priorities | Ray Myers, DFW EOS Implementer®",
