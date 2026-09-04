@@ -128,6 +128,12 @@ PAGES_MANIFEST = [
      "description": "How to know if you have the right people in the right seats. A step-by-step guide to the EOS® People Analyzer, GWC (Get it, Want it, Capacity), core values ratings, and the Three-Strike Rule. By Ray Myers, Professional EOS Implementer® in DFW.",
      "nav_key": "insights"},
 
+    {"src": "insights/rocks-vs-todos-quarterly-priorities.html",
+     "out": "insights/rocks-vs-todos-quarterly-priorities.html",
+     "title": "Rocks vs. To-Dos: Why Your Team Keeps Missing Quarterly Priorities | Ray Myers, DFW EOS Implementer®",
+     "description": "Most missed Rocks aren't a discipline problem, they're a definition problem. The difference between a Rock and a to-do, why 3 to 7 is the magic number, and how to set Q4 priorities your leadership team will actually hit. By Ray Myers, Professional EOS Implementer® in DFW.",
+     "nav_key": "insights"},
+
     {"src": "insights/eos-life-time-for-passions.html",
      "out": "insights/eos-life-time-for-passions.html",
      "title": "Time for Other Passions — The EOS Life® | Ray Myers, DFW EOS Implementer®",
